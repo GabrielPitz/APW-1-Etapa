@@ -1,0 +1,126 @@
+body {
+    background-image: url(../img/walpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form {
+    width: 60%;
+    margin: auto;
+}
+
+label {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1.2em;
+    color: rgb(236, 93, 236);
+}
+
+input, select {
+    padding: 0.3em;
+    border-radius: 0.5em;
+    width: 100%;
+    margin-bottom: 1.5em;
+    font-size: 1.5em;
+}
+
+input[type='radio'] , input[type='checkbox'] {
+    width: 0.8em;
+    margin-left: 0.7em;
+    font-size: 1.5em;
+}
+
+input[value="Escolher"]:hover {
+    transition: 0.5s;
+    background-color: purple;
+    color: white;
+}
+
+input:focus {
+    background-color: purple;
+    color: white;
+}
+
+input:focus::placeholder {
+    color: white; /* Define a cor branca para o placeholder quando o input estiver em foco */
+}
+
+.pag {
+    width: 45%;
+    min-width: 700px;
+    background-color: rgb(44, 44, 44);
+    border-radius: 2em;
+    padding: 5em;
+}
+
+h1 {
+    font-family: "arial-black";
+    text-align: center;
+    font-size: 2.5em;
+     font-weight: bold;
+     font-family: Arial, Helvetica, sans-serif;
+     color: white;
+}
+
+h2 {
+    font-family: "arial-black";
+    color: black;
+    text-align: center;
+    font-size: 2em;
+    padding: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#saida {
+    font-family: "arial black";
+    font-size: 2.5em;
+
+}
+
+section#resultados {
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+p#res {
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+button {
+    display: block;
+    margin: auto;
+    text-align: center;
+    background-color: purple;
+    color: white;
+    padding: 20px;
+    font-size: 23px;
+    border-radius: 10px;
+}
+
+button:hover {
+    transition: 0.5s;
+    background-color: purple;
+    color: white;
+}
+
+@media screen and (orientation: portrait) {
+    .pag {
+        margin: 30px;
+    }
+}
+
+
+

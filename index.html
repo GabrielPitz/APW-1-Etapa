@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Trabalho</title>
+</head>
+<body>
+    <section class="pag">
+        <h1><output id="titulo"> Loteria </output></h1>
+            <form name="megasena" action="#" onsubmit="escolher(event)">
+                
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome">
+                
+
+                
+                    <label for="telefone">Telefone</label>
+                    <input type="text" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx">
+                
+                
+                
+                    <label for="email">E-mail</label>
+                    <input type="text" name="email" id="email" placeholder="nome@ganhador.com">
+                
+                
+                
+                    <label for="data">Data</label>
+                    <input type="date" name="data" id="data">
+                
+                
+                
+                    <section id="loteria">
+                        <label for="nums">Entre 1 e 10, escolha 5 números</label>
+                        <input type="number" name="nums" id="nums"  placeholder="Escolha 5 números" min="1" max="20">
+                        <input type="submit" value="Escolher" onclick="escolher(event)">
+                    </section>
+
+                    <section id="resultados">
+                        <h2>Sorteamento dos Números</h2>
+
+                        <button onclick="sortear()">Sortear</button>
+
+                        <p id="res"></p>
+                    </section>
+
+            </form>
+    </section>
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
